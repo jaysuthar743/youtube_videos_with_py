@@ -1,5 +1,5 @@
-import pytube
-video_url = 'https://www.youtube.com/watch?v=tXOIvjbNhts' // paste here your Youube videos' url.
-youtube = pytube.YouTube(video_url)
-video = youtube.streams.first()
-video.download('/home/jay/Downloads') // path, where to download video.
+from pytube import YouTube
+video = YouTube('https://www.youtube.com/watch?v=d3D7Y_ycSms')
+print(video.title)
+print(video.video_id)
+print(video.age_restricted)
